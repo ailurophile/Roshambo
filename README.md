@@ -1,0 +1,1 @@
+This project was developed as part of the Udacity iOS developer nano-degree program.  It plays the game rock, paper scissors presenting the results view controller programatically for the rock button, using both code and segue for the paper button, and using segue only for the scissors button.

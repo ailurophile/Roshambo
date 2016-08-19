@@ -13,6 +13,7 @@
 		D7B43E711D6680DC00295115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B43E6E1D6680DC00295115 /* Main.storyboard */; };
 		D7B43E721D6680DC00295115 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B43E6F1D6680DC00295115 /* ResultsViewController.swift */; };
 		D7B43E731D6680DC00295115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B43E701D6680DC00295115 /* ViewController.swift */; };
+		D7B43E751D66C2C800295115 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D7B43E741D66C2C800295115 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D7B43E6E1D6680DC00295115 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		D7B43E6F1D6680DC00295115 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsViewController.swift; path = ../ResultsViewController.swift; sourceTree = "<group>"; };
 		D7B43E701D6680DC00295115 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		D7B43E741D66C2C800295115 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		D7B43E501D66809F00295115 = {
 			isa = PBXGroup;
 			children = (
+				D7B43E741D66C2C800295115 /* README.md */,
 				D7B43E5B1D66809F00295115 /* Roshambo2 */,
 				D7B43E5A1D66809F00295115 /* Products */,
 			);
@@ -140,6 +143,7 @@
 			files = (
 				D7B43E731D6680DC00295115 /* ViewController.swift in Sources */,
 				D7B43E5D1D66809F00295115 /* AppDelegate.swift in Sources */,
+				D7B43E751D66C2C800295115 /* README.md in Sources */,
 				D7B43E721D6680DC00295115 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -113,7 +113,6 @@
                                 <state key="normal" title="Play again!"/>
                                 <connections>
                                     <action selector="playAgain:" destination="K0e-uS-8RX" eventType="touchUpInside" id="BNa-iJ-rMv"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="wJn-Yl-WTy"/>
                                 </connections>
                             </button>
                         </subviews>
