@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             presentViewController(controller, animated: true, completion: nil)
         case .Paper:
             //Code & segue presentation
-            self.performSegueWithIdentifier("playGame", sender: self)
+            self.performSegueWithIdentifier("playGame", sender: sender)
             
         default:
             print("This should never happen!")
@@ -44,13 +44,10 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let controller = segue.destinationViewController as! ResultsViewController
         print(segue.identifier)
-        if segue.identifier == "playGame" {
-            controller.playerChoice = .Paper
+
+        if segue.identifier == "playGame"{
             
-        }
-        if segue.identifier == "scissorsButton"{
-            
-          controller.playerChoice = (Roshambo(rawValue: sender!.tag)!)
+          controller.playerChoice = (Roshambo(rawValue: (sender as! UIButton).tag)!)
         }
         
     }

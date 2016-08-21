@@ -13,7 +13,7 @@
 		D7B43E711D6680DC00295115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B43E6E1D6680DC00295115 /* Main.storyboard */; };
 		D7B43E721D6680DC00295115 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B43E6F1D6680DC00295115 /* ResultsViewController.swift */; };
 		D7B43E731D6680DC00295115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B43E701D6680DC00295115 /* ViewController.swift */; };
-		D7B43E751D66C2C800295115 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D7B43E741D66C2C800295115 /* README.md */; };
+		D7B43E751D66C2C800295115 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D7B43E741D66C2C800295115 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +131,7 @@
 				D7B43E711D6680DC00295115 /* Main.storyboard in Resources */,
 				D7B43E671D66809F00295115 /* LaunchScreen.storyboard in Resources */,
 				D7B43E641D66809F00295115 /* Assets.xcassets in Resources */,
+				D7B43E751D66C2C800295115 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +144,6 @@
 			files = (
 				D7B43E731D6680DC00295115 /* ViewController.swift in Sources */,
 				D7B43E5D1D66809F00295115 /* AppDelegate.swift in Sources */,
-				D7B43E751D66C2C800295115 /* README.md in Sources */,
 				D7B43E721D6680DC00295115 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +286,7 @@
 				D7B43E6D1D66809F00295115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
