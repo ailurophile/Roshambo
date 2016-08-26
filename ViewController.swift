@@ -30,7 +30,7 @@ class ViewController: UIViewController {
             // code only presentation
             controller = self.storyboard?.instantiateViewControllerWithIdentifier("ResultsViewController") as! ResultsViewController
             controller.playerChoice = choice
-            presentViewController(controller, animated: true, completion: nil)
+            self.navigationController?.pushViewController(controller, animated: true)
         case .Paper:
             //Code & segue presentation
             self.performSegueWithIdentifier("playGame", sender: sender)

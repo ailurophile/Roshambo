@@ -65,7 +65,7 @@ class ResultsViewController: UIViewController {
     }
 
     @IBAction func playAgain(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
 }
