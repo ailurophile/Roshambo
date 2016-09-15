@@ -8,7 +8,7 @@
 
 import UIKit
 enum Roshambo:Int {
-    case Rock = 0, Paper, Scissors
+    case rock = 0, paper, scissors
 }
 class ViewController: UIViewController {
 
@@ -21,19 +21,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func makeSelection(sender: UIButton){
+    @IBAction func makeSelection(_ sender: UIButton){
         var controller: ResultsViewController
         let choice: Roshambo = (Roshambo(rawValue: sender.tag)!)
         print("button raw value: \(sender.tag) which means \(choice) selected")
         switch choice {
-        case .Rock:
+        case .rock:
             // code only presentation
-            controller = self.storyboard?.instantiateViewControllerWithIdentifier("ResultsViewController") as! ResultsViewController
+            controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultsViewController") as! ResultsViewController
             controller.playerChoice = choice
             self.navigationController?.pushViewController(controller, animated: true)
-        case .Paper:
+        case .paper:
             //Code & segue presentation
-            self.performSegueWithIdentifier("playGame", sender: sender)
+            self.performSegue(withIdentifier: "playGame", sender: sender)
             
         default:
             print("This should never happen!")
@@ -41,8 +41,8 @@ class ViewController: UIViewController {
         
         }
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let controller = segue.destinationViewController as! ResultsViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as! ResultsViewController
         print(segue.identifier)
 
         if segue.identifier == "playGame"{

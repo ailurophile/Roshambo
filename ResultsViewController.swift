@@ -15,8 +15,8 @@ class ResultsViewController: UIViewController {
 
     @IBOutlet weak var resultsImage: UIImageView!
     
-    var playerChoice: Roshambo = .Rock
-    override func viewWillAppear(animated: Bool) {
+    var playerChoice: Roshambo = .rock
+    override func viewWillAppear(_ animated: Bool) {
         playRoshambo()
     }
     override func viewDidLoad() {
@@ -37,25 +37,25 @@ class ResultsViewController: UIViewController {
         print("Player picked \(playerChoice)")
        
         switch (choice, playerChoice){
-        case (.Rock, .Rock), (.Paper, .Paper), (.Scissors, .Scissors):
+        case (.rock, .rock), (.paper, .paper), (.scissors, .scissors):
             results.text = "It's a tie!"
             self.resultsImage.image = UIImage(named: "itsATie")
-        case (.Rock, .Paper):
+        case (.rock, .paper):
             results.text = "Paper covers rock. You win!"
             self.resultsImage.image = UIImage(named: "PaperCoversRock")
-        case(.Rock, .Scissors):
+        case(.rock, .scissors):
             results.text = "Rock crushes scissors. You lose!"
             self.resultsImage.image = UIImage(named: "RockCrushesScissors")
-        case (.Paper, .Rock):
+        case (.paper, .rock):
             results.text = "Paper covers rock. You lose!"
             self.resultsImage.image = UIImage(named: "PaperCoversRock")
-        case (.Paper, .Scissors):
+        case (.paper, .scissors):
             results.text = "Scissors cut paper. You win!"
             self.resultsImage.image = UIImage(named: "ScissorsCutPaper")
-        case (.Scissors, .Rock):
+        case (.scissors, .rock):
             results.text = "Rock crushes scissors.  You win!"
             self.resultsImage.image = UIImage(named: "RockCrushesScissors")
-        case (.Scissors, .Paper):
+        case (.scissors, .paper):
             results.text = "Scissors cut paper. You lose!"
             self.resultsImage.image = UIImage(named: "ScissorsCutPaper")
  
@@ -64,8 +64,9 @@ class ResultsViewController: UIViewController {
  
     }
 
-    @IBAction func playAgain(sender: AnyObject) {
-        self.navigationController?.popToRootViewControllerAnimated(true)
+    @IBAction func playAgain(_ sender: AnyObject) {
+
+        _ = self.navigationController?.popToRootViewController(animated: true)
     }
     
 }
