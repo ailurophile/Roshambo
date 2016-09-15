@@ -31,10 +31,8 @@ class ResultsViewController: UIViewController {
 
     func playRoshambo(){
         let computerPick = Int(arc4random_uniform(3))
-        print("Computer picks \(computerPick)")
+
         let choice = Roshambo(rawValue: computerPick)!
-        print("Which is \(choice)")
-        print("Player picked \(playerChoice)")
        
         switch (choice, playerChoice){
         case (.rock, .rock), (.paper, .paper), (.scissors, .scissors):

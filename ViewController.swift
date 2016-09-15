@@ -24,7 +24,6 @@ class ViewController: UIViewController {
     @IBAction func makeSelection(_ sender: UIButton){
         var controller: ResultsViewController
         let choice: Roshambo = (Roshambo(rawValue: sender.tag)!)
-        print("button raw value: \(sender.tag) which means \(choice) selected")
         switch choice {
         case .rock:
             // code only presentation
@@ -43,7 +42,6 @@ class ViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let controller = segue.destination as! ResultsViewController
-        print(segue.identifier)
 
         if segue.identifier == "playGame"{
             
