@@ -7,4 +7,4 @@ This project was developed as part of the Udacity iOS developer nano-degree prog
     * fist - to play rock
     * fingers in a V shape - to play scissors
 * The machine makes a selection and displays an appropriate picture and phrase indicating results
-* Select Play again! or back button to return to the Let's Play! screen'
+* Select Play again! or Back button to return to the Let's Play! screen
